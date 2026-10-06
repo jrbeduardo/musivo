@@ -18,7 +18,7 @@ export default function PrivacyPage() {
       <h2>Tus decisiones</h2>
       <p>Puedes evitar el tratamiento no enviando el formulario. El consentimiento solicitado en el formulario es obligatorio para que Musivo pueda responder.</p>
       <h2>Contacto de privacidad</h2>
-      <p>El canal verificado para solicitudes de acceso, rectificación, cancelación u oposición se incorporará antes de que el sitio se publique.</p>
+      <p>Para solicitudes de acceso, rectificacion, cancelacion u oposicion puedes escribir a frankmathtohuman@gmail.com o a jrbeduardo@gmail.com.</p>
     </LegalPage>
   );
 }
