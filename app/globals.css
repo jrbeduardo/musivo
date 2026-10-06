@@ -306,10 +306,36 @@ h1, h2, h3, .brand { font-family: var(--display), sans-serif; }
 .form-success h3 { max-width: 500px; margin-top: 18px; font-size: 34px; }
 .form-success > p:last-child { margin-top: 14px; color: var(--muted); line-height: 1.6; }
 
+.contact-panel-lead { max-width: 480px; margin: -6px 0 28px; color: var(--muted); font-size: 15px; line-height: 1.6; }
+.contact-people { display: grid; gap: 0; margin: 0 0 32px; padding: 0; border: 1px solid var(--ink); list-style: none; }
+.contact-person { position: relative; display: grid; grid-template-columns: 74px 1fr; overflow: hidden; }
+.contact-person + .contact-person { border-top: 1px solid var(--ink); }
+.contact-person-tile { display: flex; align-items: center; justify-content: center; gap: 4px; padding-bottom: 6px; border-right: 1px solid var(--ink); background: var(--paper); }
+.contact-person-tile > span { width: 12px; height: 30px; border: 1px solid var(--ink); transform: skewY(-25deg); transition: transform 240ms ease; }
+.contact-person-tile > span:nth-child(2) { transform: skewY(-25deg) translateY(5px); }
+.contact-person-tile > span:nth-child(3) { transform: skewY(-25deg) translateY(10px); }
+.tone-lime .contact-person-tile > span:nth-child(1) { background: var(--lime); }
+.tone-lime .contact-person-tile > span:nth-child(2) { background: var(--coral); }
+.tone-lime .contact-person-tile > span:nth-child(3) { background: var(--teal); }
+.tone-coral .contact-person-tile > span:nth-child(1) { background: var(--coral); }
+.tone-coral .contact-person-tile > span:nth-child(2) { background: var(--teal); }
+.tone-coral .contact-person-tile > span:nth-child(3) { background: var(--lime); }
+.contact-person:hover .contact-person-tile > span:nth-child(1) { transform: skewY(-25deg) translateY(-4px); }
+.contact-person:hover .contact-person-tile > span:nth-child(3) { transform: skewY(-25deg) translateY(14px); }
+.contact-person-body { display: grid; gap: 4px; padding: 20px 22px 22px; }
+.contact-person-number { color: var(--coral); font-size: 9px; font-weight: 800; letter-spacing: 0.14em; }
+.contact-person-body strong { font-family: var(--display); font-size: 21px; font-weight: 600; line-height: 1.1; letter-spacing: -0.01em; }
+.contact-person-body small { color: var(--muted); font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.contact-person-body a { display: inline-flex; width: fit-content; align-items: center; gap: 10px; margin-top: 10px; padding-bottom: 3px; border-bottom: 2px solid var(--lime); color: var(--ink); font-size: 14px; font-weight: 700; transition: border-color 180ms ease, color 180ms ease; }
+.contact-person-body a span { color: var(--coral); }
+.contact-person-body a:hover { border-color: var(--teal); color: var(--teal); }
+
 footer { display: grid; grid-template-columns: 1.2fr 0.8fr 0.8fr; gap: 40px; padding: 60px 6vw 25px; background: var(--ink); color: white; }
 .brand-light .brand-mark > span { border-color: white; }
 .footer-brand p { margin-top: 18px; color: #aeb6af; font-size: 12px; }
 .footer-location, .footer-links { display: grid; align-content: start; gap: 12px; color: #c7cec8; font-size: 11px; }
+.footer-location a { width: fit-content; border-bottom: 1px solid #454b46; color: white; transition: border-color 180ms ease; }
+.footer-location a:hover { border-color: var(--lime); }
 .footer-note { grid-column: 1 / -1; margin-top: 45px; padding-top: 20px; border-top: 1px solid #454b46; color: #7f8881; font-size: 9px; text-transform: uppercase; }
 
 .legal-page { min-height: 100vh; background: var(--paper); }
@@ -399,6 +425,10 @@ footer { display: grid; grid-template-columns: 1.2fr 0.8fr 0.8fr; gap: 40px; pad
   .trust-step i { right: 50%; top: auto; bottom: -12px; transform: rotate(90deg); }
   .form-submit-row { align-items: flex-start; flex-direction: column; }
   .contact-form, .form-success { box-shadow: 7px 7px 0 var(--ink); }
+  .contact-person { grid-template-columns: 58px 1fr; }
+  .contact-person-body { padding: 16px 16px 18px; }
+  .contact-person-body strong { font-size: 18px; }
+  .contact-person-body a { font-size: 12px; word-break: break-all; }
   footer { grid-template-columns: 1fr; }
   .footer-note { margin-top: 15px; }
   .legal-header { padding: 0 20px; }
