@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { siteUrl, tagline } from "./site";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -12,33 +13,39 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 });
 
+const title = `Musivo | ${tagline.replace(/\.$/, "")}`;
+const description = `${tagline} Asistentes, automatización y datos para PyMEs en México: menos trabajo manual, respuestas confiables y decisiones con evidencia.`;
+// Static PNG (public/og-image.png): GitHub Pages serves extensionless files as octet-stream, which breaks previews.
+const ogImage = { url: "/og-image.png", width: 1200, height: 630, alt: `Musivo — ${tagline}`, type: "image/png" };
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Musivo | Inteligencia aplicada a problemas reales",
+    default: title,
     template: "%s | Musivo",
   },
-  description:
-    "Musivo diseña soluciones de inteligencia artificial, aprendizaje automático e ingeniería de datos que se integran con tu operación.",
+  description,
   keywords: [
-    "inteligencia artificial",
-    "aprendizaje automático",
-    "ingeniería de datos",
-    "automatización inteligente",
-    "consultoría tecnológica",
+    "inteligencia artificial para PyMEs",
+    "asistente legal con IA",
+    "automatización de procesos",
+    "análisis de datos",
+    "consultoría de IA México",
   ],
   openGraph: {
-    title: "Musivo | Transformamos problemas complejos",
-    description:
-      "IA, aprendizaje automático e ingeniería de datos aplicados con rigor, trazabilidad y resultados medibles.",
+    title,
+    description,
+    url: "/",
+    siteName: "Musivo",
     locale: "es_MX",
     type: "website",
+    images: [ogImage],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Musivo | Inteligencia aplicada a problemas reales",
-    description:
-      "Soluciones de IA y datos diseñadas desde el problema, no desde la herramienta.",
+    title,
+    description,
+    images: [ogImage],
   },
 };
 

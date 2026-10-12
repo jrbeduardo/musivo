@@ -42,7 +42,7 @@ export function KnowledgeDemo() {
     <div className="hero-demo reveal delay-1" aria-label="Demostración interactiva de un sistema de conocimiento">
       <div className="demo-topbar">
         <div className="demo-title"><MiniMark /><span>Motor de conocimiento</span></div>
-        <span className="status-pill"><i /> En línea</span>
+        <div className="demo-topbar-right"><span className="illustrative-badge">Ejemplo ilustrativo de interfaz</span><span className="status-pill"><i /> En línea</span></div>
       </div>
       <div className="demo-scenarios" role="group" aria-label="Seleccionar escenario">
         {scenarios.map(({ id, label }) => (

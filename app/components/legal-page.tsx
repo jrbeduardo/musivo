@@ -21,7 +21,7 @@ export function LegalPage({ eyebrow, title, updated, children }: LegalPageProps)
       <article className="legal-content">
         <p className="eyebrow">{eyebrow}</p>
         <h1>{title}</h1>
-        <div className="draft-notice"><strong>Documento preliminar</strong><span>Debe revisarse y aprobarse antes de publicar el sitio.</span></div>
+        <div className="draft-notice"><strong>Plantilla base</strong><span>Los datos entre corchetes deben completarse y el documento revisarse por un abogado antes de su publicación definitiva.</span></div>
         <p className="legal-updated">Última actualización: {updated}</p>
         {children}
       </article>

@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
-const isGithubActions = process.env.GITHUB_ACTIONS === "true";
-const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "";
-const basePath = isGithubActions && repoName ? `/${repoName}` : "";
+// Mirrors `siteBasePath` in app/site.ts. Set NEXT_PUBLIC_BASE_PATH= (empty) for local dev at /.
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "/musivo";
 
 const nextConfig: NextConfig = {
   output: "export",

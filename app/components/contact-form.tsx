@@ -2,15 +2,15 @@ const contacts = [
   {
     number: "01",
     name: "Francisco Pérez Carbajal",
-    role: "Matemáticas aplicadas · IA",
-    email: "frankmathtohuman@gmail.com",
+    role: "Matemático (UNAM) · IA aplicada",
+    email: "francisco@musivo.mx",
     tone: "lime",
   },
   {
     number: "02",
     name: "José Eduardo Rodríguez Barrios",
-    role: "Ingeniería de datos · ML",
-    email: "jrbeduardo@gmail.com",
+    role: "Matemático (UNAM) · Ingeniería de datos y ML",
+    email: "eduardo@musivo.mx",
     tone: "coral",
   },
 ] as const;
@@ -35,6 +35,7 @@ export function ContactForm() {
           </li>
         ))}
       </ul>
+      <p className="contact-credentials">Ambos formados en Matemáticas en la UNAM, con experiencia previa liderando proyectos de datos e inteligencia artificial en empresas de gran escala en México.</p>
       <div className="form-submit-row">
         <a className="button button-primary" href={`mailto:${contacts.map((c) => c.email).join(",")}?subject=${subject}`}>
           Solicitar diagnóstico <span aria-hidden="true">↗</span>

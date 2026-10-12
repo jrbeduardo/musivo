@@ -18,7 +18,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NEXT_PUBLIC_SITE_URL: https://jrbeduardo.github.io/musivo
+      NEXT_PUBLIC_SITE_URL: https://jrbeduardo.github.io
+      NEXT_PUBLIC_BASE_PATH: /musivo
     steps:
       - name: Checkout
         uses: actions/checkout@v4
