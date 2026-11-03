@@ -1,21 +1,23 @@
+import { BrandMark } from "./brand-mark";
+
 const contacts = [
   {
     number: "01",
     name: "Francisco Pérez Carbajal",
     role: "Matemático (UNAM) · IA aplicada",
-    email: "francisco@musivo.mx",
-    tone: "lime",
+    email: "francisco@tropema.mx",
+    tone: "accent",
   },
   {
     number: "02",
     name: "José Eduardo Rodríguez Barrios",
     role: "Matemático (UNAM) · Ingeniería de datos y ML",
-    email: "eduardo@musivo.mx",
-    tone: "coral",
+    email: "eduardo@tropema.mx",
+    tone: "signal",
   },
 ] as const;
 
-const subject = encodeURIComponent("Diagnóstico inicial · Musivo");
+const subject = encodeURIComponent("Diagnóstico inicial · Tropema");
 
 export function ContactForm() {
   return (
@@ -25,7 +27,7 @@ export function ContactForm() {
       <ul className="contact-people">
         {contacts.map(({ number, name, role, email, tone }) => (
           <li className={`contact-person tone-${tone}`} key={email}>
-            <span className="contact-person-tile" aria-hidden="true"><span /><span /><span /></span>
+            <span className="contact-person-tile" aria-hidden="true"><BrandMark /></span>
             <div className="contact-person-body">
               <span className="contact-person-number">{number}</span>
               <strong>{name}</strong>

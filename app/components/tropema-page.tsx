@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandMark } from "./brand-mark";
 import { ContactForm } from "./contact-form";
 import { KnowledgeDemo } from "./knowledge-demo";
 import { MethodExplorer } from "./method-explorer";
@@ -55,15 +56,11 @@ const trustGlossary = [
   ["Trazabilidad", "Sabes exactamente de qué documento, cláusula o página salió cada respuesta."],
 ];
 
-function BrandMark() {
-  return <span className="brand-mark" aria-hidden="true"><span /><span /><span /></span>;
-}
-
-export function MusivoPage() {
+export function TropemaPage() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#inicio" aria-label="Musivo, inicio"><BrandMark /><span>musivo</span></a>
+        <a className="brand" href="#inicio" aria-label="Tropema, inicio"><BrandMark /><span>tropema</span></a>
         <nav className="desktop-nav" aria-label="Navegación principal">
           <a href="#soluciones">Soluciones</a><a href="#metodo">Método</a><a href="#caso">Caso de uso</a><a href="#nosotros">Nosotros</a>
         </nav>
@@ -117,7 +114,7 @@ export function MusivoPage() {
       </section>
 
       <section className="method-section" id="metodo">
-        <div className="method-intro"><div className="section-kicker light"><span>03</span> Método Musivo</div><h2>Del reto operativo a un sistema que se puede comprobar.</h2><p>Cada etapa reduce incertidumbre. Antes de construir, acordamos qué significa que la solución funcione.</p></div>
+        <div className="method-intro"><div className="section-kicker light"><span>03</span> Método Tropema</div><h2>Del reto operativo a un sistema que se puede comprobar.</h2><p>Cada etapa reduce incertidumbre. Antes de construir, acordamos qué significa que la solución funcione.</p></div>
         <MethodExplorer />
       </section>
 
@@ -125,17 +122,17 @@ export function MusivoPage() {
         <MosaicExplorer />
         <div className="story-copy">
           <div className="section-kicker"><span>04</span> El nombre</div>
-          <h2>Piezas independientes. Una imagen coherente.</h2>
-          <p>Musivo viene del <em>arte musivo</em>, el arte del mosaico: piezas independientes que, al unirse, forman una imagen coherente. Así vemos a un negocio. Personas, procesos, datos y herramientas que solo cobran sentido cuando encajan.</p>
-          <p>Los mosaicos que cubren un plano no son infinitos en su variedad. Las matemáticas los clasifican por sus simetrías en exactamente 17 grupos cristalográficos planos: detrás de cada patrón, por complejo que parezca, hay una estructura que se puede reconocer y nombrar.</p>
-          <p>Esa estructura se construye con movimientos isométricos: trasladar, rotar y reflejar. Transformaciones que cambian la posición de cada pieza y conservan distancias y proporciones sin deformar la esencia. Es exactamente lo que hacemos con tu operación: la transformamos con tecnología sin perder aquello que ya funciona.</p>
-          <blockquote>Movimiento con estructura.<br />Cambio con evidencia.</blockquote>
+          <h2>El teorema de un giro.</h2>
+          <p>Tropema une dos raíces. <em>Tropos</em>, la palabra griega para giro, vuelta o cambio de dirección, de donde viene <em>tropo</em>. Y <em>teorema</em>, una proposición que no se afirma: se demuestra. Un tropema es el teorema de un giro, la regla que explica cómo algo cambia de dirección sin perder lo que lo define. Así entendemos la transformación de un negocio.</p>
+          <p>En geometría, los giros tienen estructura. Los mosaicos que cubren un plano se clasifican por sus simetrías en exactamente 17 grupos cristalográficos: detrás de cada patrón, por complejo que parezca, hay una regla que se puede reconocer y nombrar.</p>
+          <p>Esa regla se construye con movimientos isométricos: trasladar, rotar y reflejar. Transformaciones que cambian la posición de cada pieza y conservan distancias y proporciones sin deformar la esencia. Es exactamente lo que hacemos con tu operación: le damos un giro con tecnología y demostramos, con evidencia, que sigue siendo tu negocio.</p>
+          <blockquote>Un giro con estructura.<br />Un cambio que se demuestra.</blockquote>
         </div>
       </section>
 
       <section className="use-case" id="caso">
         <div className="case-copy"><div className="section-kicker"><span>05</span> Caso de uso</div><p className="case-sector">Servicios legales</p><h2>Orientación fundamentada. Captación calificada.</h2><p>Un asistente especializado identifica el tema, consulta normativa vigente, aclara la solicitud y deriva el caso cuando requiere criterio profesional.</p><ul className="check-list"><li>Consulta en lenguaje natural</li><li>Cada respuesta indica de qué ley, cláusula o página salió</li><li>Pide aclaraciones cuando la pregunta es ambigua</li><li>Canaliza el caso a tu equipo y da seguimiento</li></ul><p className="legal-note">La herramienta ofrece orientación informativa y no sustituye la asesoría de un profesional del derecho.</p></div>
-        <div className="case-demo"><div className="case-window-head"><span>Consulta guiada</span><span className="illustrative-badge">Ejemplo ilustrativo de interfaz</span><span>Fuentes activas: 18</span></div><div className="message user-message">¿Puedo rescindir un contrato si la otra parte incumplió una fecha?</div><div className="message assistant-message"><span className="message-author">Asistente Musivo</span><p>Para orientar la búsqueda necesito confirmar: ¿el contrato establece esa fecha como obligación esencial y existe una cláusula de rescisión?</p><div className="message-actions"><span>Revisar cláusula</span><span>Hablar con especialista</span></div></div><div className="case-confidence"><div><span>Contexto identificado</span><strong>Contrato civil</strong></div><div><span>Estado</span><strong>Requiere aclaración</strong></div></div></div>
+        <div className="case-demo"><div className="case-window-head"><span>Consulta guiada</span><span className="illustrative-badge">Ejemplo ilustrativo de interfaz</span><span>Fuentes activas: 18</span></div><div className="message user-message">¿Puedo rescindir un contrato si la otra parte incumplió una fecha?</div><div className="message assistant-message"><span className="message-author">Asistente Tropema</span><p>Para orientar la búsqueda necesito confirmar: ¿el contrato establece esa fecha como obligación esencial y existe una cláusula de rescisión?</p><div className="message-actions"><span>Revisar cláusula</span><span>Hablar con especialista</span></div></div><div className="case-confidence"><div><span>Contexto identificado</span><strong>Contrato civil</strong></div><div><span>Estado</span><strong>Requiere aclaración</strong></div></div></div>
       </section>
 
       <section className="trust-section" id="confianza">
@@ -157,7 +154,7 @@ export function MusivoPage() {
         <ContactForm />
       </section>
 
-      <footer><div className="footer-brand"><a className="brand brand-light" href="#inicio"><BrandMark /><span>musivo</span></a><p>{tagline}</p></div><div className="footer-location"><span>Ciudad de México</span><a href={`mailto:${contactEmail}`}>{contactEmail}</a></div><div className="footer-links"><Link href="/privacidad/">Aviso de privacidad</Link><Link href="/terminos/">Términos de uso</Link></div><p className="footer-note">© 2026 Musivo. Transformar sin perder la esencia.</p></footer>
+      <footer><div className="footer-brand"><a className="brand brand-light" href="#inicio"><BrandMark /><span>tropema</span></a><p>{tagline}</p></div><div className="footer-location"><span>Ciudad de México</span><a href={`mailto:${contactEmail}`}>{contactEmail}</a></div><div className="footer-links"><Link href="/privacidad/">Aviso de privacidad</Link><Link href="/terminos/">Términos de uso</Link></div><p className="footer-note">© 2026 Tropema. Transformar sin perder la esencia.</p></footer>
     </main>
   );
 }

@@ -16,7 +16,7 @@ export function MethodExplorer() {
 
   return (
     <div className="method-explorer">
-      <ol className="method-list" aria-label="Etapas del método Musivo">
+      <ol className="method-list" aria-label="Etapas del método Tropema">
         {steps.map(([title, description], index) => (
           <li key={title} className={activeStep === index ? "active" : ""}>
             <button type="button" onClick={() => setActiveStep(index)} aria-pressed={activeStep === index}>

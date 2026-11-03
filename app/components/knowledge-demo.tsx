@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
+import { BrandMark } from "./brand-mark";
 
 const scenarios = [
   {
@@ -30,7 +31,7 @@ const scenarios = [
 ];
 
 function MiniMark() {
-  return <span className="brand-mark" aria-hidden="true"><span /><span /><span /></span>;
+  return <BrandMark />;
 }
 
 export function KnowledgeDemo() {

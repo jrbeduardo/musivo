@@ -1,5 +1,5 @@
-import { MusivoPage } from "./components/musivo-page";
+import { TropemaPage } from "./components/tropema-page";
 
 export default function Home() {
-  return <MusivoPage />;
+  return <TropemaPage />;
 }

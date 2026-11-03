@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { BrandMark } from "./brand-mark";
 
 type LegalPageProps = {
   eyebrow: string;
@@ -12,9 +13,9 @@ export function LegalPage({ eyebrow, title, updated, children }: LegalPageProps)
   return (
     <main className="legal-page">
       <header className="legal-header">
-        <Link className="brand" href="/" aria-label="Volver a Musivo">
-          <span className="brand-mark" aria-hidden="true"><span /><span /><span /></span>
-          <span>musivo</span>
+        <Link className="brand" href="/" aria-label="Volver a Tropema">
+          <BrandMark />
+          <span>tropema</span>
         </Link>
         <Link href="/">Volver al inicio</Link>
       </header>
