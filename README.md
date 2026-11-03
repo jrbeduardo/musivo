@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000/tropema/](http://localhost:3000/tropema/) with your browser to see the result. The site is served under the `/tropema` base path by default (matching GitHub Pages); set `NEXT_PUBLIC_BASE_PATH=` (empty) in `.env.local` to serve it at `/` instead — see `.env.example`.
+Open [http://localhost:3000/musivo/](http://localhost:3000/musivo/) with your browser to see the result. The site is served under the `/musivo` base path by default (matching GitHub Pages); set `NEXT_PUBLIC_BASE_PATH=` (empty) in `.env.local` to serve it at `/` instead — see `.env.example`.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
