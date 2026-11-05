@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BrandMark } from "./brand-mark";
+import { BrandMark, TileGlyph } from "./brand-mark";
 import { ContactForm } from "./contact-form";
 import { KnowledgeDemo } from "./knowledge-demo";
 import { MethodExplorer } from "./method-explorer";
@@ -62,7 +62,7 @@ export function TropemaPage() {
       <header className="site-header">
         <a className="brand" href="#inicio" aria-label="Tropema, inicio"><BrandMark /><span>tropema</span></a>
         <nav className="desktop-nav" aria-label="Navegación principal">
-          <a href="#soluciones">Soluciones</a><a href="#metodo">Método</a><a href="#caso">Caso de uso</a><a href="#nosotros">Nosotros</a>
+          <a href="#soluciones">Soluciones</a><a href="#metodo">Método</a><a href="#caso">Caso de uso</a><a href="#nombre">El nombre</a>
         </nav>
         <a className="header-cta" href="#contacto">Agendar diagnóstico</a>
         <MobileNavigation />
@@ -70,13 +70,13 @@ export function TropemaPage() {
 
       <section className="hero" id="inicio">
         <div className="hero-pattern"><MosaicPattern id="hero-mosaic" density="large" /></div>
-        <div className="hero-copy reveal">
+        <div className="hero-copy">
           <p className="eyebrow">Asistentes · Automatización · Datos para PyMEs</p>
           <h1>{tagline}</h1>
           <p className="hero-lead">¿Tu equipo pierde horas respondiendo las mismas preguntas, buscando información en archivos dispersos o decidiendo sin datos confiables? Diseñamos asistentes y sistemas que se integran a cómo ya trabajas y demuestran su valor con resultados que puedes comprobar.</p>
           <div className="hero-actions">
-            <a className="button button-primary" href="#contacto">Agendar diagnóstico <span aria-hidden="true">↗</span></a>
-            <a className="text-link" href="#metodo">Conocer el método <span aria-hidden="true">↓</span></a>
+            <a className="button button-primary" href="#contacto"><span className="button-label">Agendar diagnóstico</span><span className="button-cap"><TileGlyph /></span></a>
+            <a className="text-link" href="#metodo">Conocer el método <TileGlyph /></a>
           </div>
         </div>
         <KnowledgeDemo />
@@ -101,7 +101,7 @@ export function TropemaPage() {
               <h3>{title}</h3>
               <p>{description}</p>
               <strong className="product-benefit">{benefit}</strong>
-              <span className="card-arrow" aria-hidden="true">↗</span>
+              <span className="card-arrow"><TileGlyph /></span>
             </article>
           ))}
         </div>
@@ -118,14 +118,14 @@ export function TropemaPage() {
         <MethodExplorer />
       </section>
 
-      <section className="brand-story" id="nosotros">
+      <section className="brand-story" id="nombre">
         <MosaicExplorer />
         <div className="story-copy">
           <div className="section-kicker"><span>04</span> El nombre</div>
           <h2>El teorema de un giro.</h2>
           <p>Tropema une dos raíces. <em>Tropos</em>, la palabra griega para giro, vuelta o cambio de dirección, de donde viene <em>tropo</em>. Y <em>teorema</em>, una proposición que no se afirma: se demuestra. Un tropema es el teorema de un giro, la regla que explica cómo algo cambia de dirección sin perder lo que lo define. Así entendemos la transformación de un negocio.</p>
-          <p>En geometría, los giros tienen estructura. Los mosaicos que cubren un plano se clasifican por sus simetrías en exactamente 17 grupos cristalográficos: detrás de cada patrón, por complejo que parezca, hay una regla que se puede reconocer y nombrar.</p>
-          <p>Esa regla se construye con movimientos isométricos: trasladar, rotar y reflejar. Transformaciones que cambian la posición de cada pieza y conservan distancias y proporciones sin deformar la esencia. Es exactamente lo que hacemos con tu operación: le damos un giro con tecnología y demostramos, con evidencia, que sigue siendo tu negocio.</p>
+          <p>En geometría, los giros tienen estructura. Los mosaicos periódicos del plano se clasifican por sus simetrías en exactamente 17 grupos cristalográficos: detrás de cada uno hay una regla que se puede reconocer y nombrar.</p>
+          <p>Esa estructura se construye con movimientos que no deforman: trasladar, rotar y reflejar. Transformaciones que cambian la posición de cada pieza y conservan distancias y proporciones sin deformar la esencia. Eso hacemos con tu operación: le damos un giro con tecnología y demostramos, con evidencia, que sigue siendo tu negocio.</p>
           <blockquote>Un giro con estructura.<br />Un cambio que se demuestra.</blockquote>
         </div>
       </section>

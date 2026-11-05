@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { TileGlyph } from "./brand-mark";
 
 const steps = [
   ["Entender", "Problema, contexto y restricciones", "Un mapa compartido del reto y de aquello que no debe romperse."],
@@ -22,7 +23,7 @@ export function MethodExplorer() {
             <button type="button" onClick={() => setActiveStep(index)} aria-pressed={activeStep === index}>
               <span className="method-number">0{index + 1}</span>
               <span><strong>{title}</strong><small>{description}</small></span>
-              <i aria-hidden="true">↗</i>
+              <i><TileGlyph /></i>
             </button>
           </li>
         ))}

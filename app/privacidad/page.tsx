@@ -13,7 +13,7 @@ export default function PrivacyPage() {
       <p>Aviso emitido en cumplimiento de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP), su Reglamento y los Lineamientos del Aviso de Privacidad.</p>
 
       <h2>1. Identidad y domicilio del responsable</h2>
-      <p>[Razón social o nombre del responsable], en adelante “Tropema”, con domicilio en [calle, número, colonia, alcaldía, C.P.], Ciudad de México, México, es responsable del tratamiento de los datos personales que nos proporcionas a través del formulario de contacto o por correo electrónico.</p>
+      <p>[Razón social o nombre del responsable], en adelante “Tropema”, con domicilio en [calle, número, colonia, alcaldía, C.P.], Ciudad de México, México, es responsable del tratamiento de los datos personales que nos proporcionas por correo electrónico.</p>
 
       <h2>2. Datos personales que recabamos</h2>
       <p>Al contactarnos recabamos los siguientes datos de identificación y contacto: nombre completo, correo electrónico, nombre de la empresa u organización, puesto (opcional) y la descripción del proceso o reto que deseas mejorar. También registramos la fecha y hora en que otorgaste tu consentimiento.</p>
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
       <p><strong>Finalidades secundarias</strong> (no necesarias para la relación): enviarte información sobre servicios, contenidos o novedades de Tropema. Si no deseas que tus datos se traten para estas finalidades, indícalo en tu primer mensaje o escribe a {privacyEmail}. Tu negativa no será motivo para dejar de atender tu solicitud.</p>
 
       <h2>4. Transferencias de datos</h2>
-      <p>Tus datos no se venden ni se comparten con terceros para fines distintos a los descritos. Únicamente podrán ser tratados por proveedores que prestan servicios a Tropema (alojamiento, correo electrónico y gestión de formularios) bajo acuerdos de confidencialidad, o cuando una autoridad competente lo requiera conforme a la ley. En estos casos no se requiere tu consentimiento según el artículo 37 de la LFPDPPP.</p>
+      <p>Tus datos no se venden ni se comparten con terceros para fines distintos a los descritos. Únicamente podrán ser tratados por proveedores que prestan servicios a Tropema (alojamiento y correo electrónico) bajo acuerdos de confidencialidad, o cuando una autoridad competente lo requiera conforme a la ley. En estos casos no se requiere tu consentimiento según el artículo 37 de la LFPDPPP.</p>
 
       <h2>5. Conservación de los datos</h2>
       <p>Conservaremos tus datos durante el tiempo necesario para cumplir las finalidades descritas y, en su caso, por un plazo máximo de [12] meses después del último contacto, salvo que exista una obligación legal de conservarlos por más tiempo o inicies una relación comercial con Tropema.</p>
@@ -46,7 +46,7 @@ export default function PrivacyPage() {
       <p>Si consideras que tu derecho a la protección de datos personales ha sido vulnerado, puedes acudir ante la autoridad competente en materia de protección de datos personales en México.</p>
 
       <h2>11. Consentimiento</h2>
-      <p>Al enviar el formulario de contacto o escribirnos por correo electrónico, manifiestas que has leído este aviso y otorgas tu consentimiento para el tratamiento de tus datos personales conforme a lo aquí descrito.</p>
+      <p>Al escribirnos por correo electrónico, manifiestas que has leído este aviso y otorgas tu consentimiento para el tratamiento de tus datos personales conforme a lo aquí descrito.</p>
     </LegalPage>
   );
 }

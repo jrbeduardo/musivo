@@ -8,3 +8,13 @@ export function BrandMark() {
     </svg>
   );
 }
+
+// Small action glyph: the same ∎ core, resting as a diamond and squaring up on hover.
+export function TileGlyph() {
+  return (
+    <svg className="tile-glyph" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+      <rect className="tile-glyph-core" x="4" y="4" width="8" height="8" />
+      <circle className="tile-glyph-pivot" cx="8" cy="8" r="1.1" />
+    </svg>
+  );
+}

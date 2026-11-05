@@ -6,7 +6,7 @@ const links = [
   ["#soluciones", "Soluciones"],
   ["#metodo", "Método"],
   ["#caso", "Caso de uso"],
-  ["#nosotros", "Nosotros"],
+  ["#nombre", "El nombre"],
   ["#contacto", "Agendar diagnóstico"],
 ];
 
